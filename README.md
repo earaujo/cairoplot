@@ -7,7 +7,7 @@ and used to plot graphics. This porting was born in December 2010; though there'
 to be official porting project also based on [CairoPlot](https://github.com/gass/cairoplot); it uses Cairo
 and Gnome/Gtk+.
 
-This porting can be used in any cairo_context_t &mdash; on any target surface. This porting was not finished
+This porting can be used in any `cairo_context_t` &mdash; on any target surface. This porting was not finished
 (it is far from that), so it has some use limitations. So far it supports:
 
  * Dotted-line graphics
