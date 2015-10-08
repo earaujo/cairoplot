@@ -1,6 +1,6 @@
 # The CairoPlot Porting to C code
-   
-> WARNING: This project is not maintained anymore
+
+> CairoPlot porting to C from the original CairoPlot written in Python
 
 [CairoPlot](https://launchpad.net/cairoplot) is a library that resides upon PyCairo, written in Python,
 and used to plot graphics. This porting was born in December 2010; but there's already another supposed
@@ -14,7 +14,7 @@ This porting can be used in any cairo_context_t (on any target surface). The por
 
 ## License
 
-Please refer to the included LICENCE file for terms of use. This porting is licensed under
+Please refer to the included LICENSE and LGPL files for terms of use. This porting is licensed under
 LGPL v2.1 just as the original code written in Python.
 
-Copyright 2011-2014 Ewerton Assis
+Copyright 2011-2015 Ewerton Assis

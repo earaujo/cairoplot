@@ -1,37 +1,25 @@
-// CairoPlot porting from the original CairoPlot written in Python.
-// Copyright (C) 2011 Ewerton Assis.
-// 
+// CairoPlot porting to C from the original CairoPlot written in Python.
+// Copyright (C) 2011-2015 Ewerton Assis.
+//
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
 // License as published by the Free Software Foundation; either
 // version 2.1 of the License, or (at your option) any later version.
-// 
+//
 // This library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 // Lesser General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Lesser General Public
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 
-#ifndef __cairoplot_retro_h__
-#define __cairoplot_retro_h__
-
-#define Y_TOP                   20
-#define Y_BOTTOM                50
-#define X_LEFT                  50
-#define X_RIGHT                 50
-#define X_AXI_BASE              50
-#define Y_AXI_BASE              50
-#define TEXT_X_DISPLACEMENT     2
-#define TEXT_Y_DISPLACEMENT     4
-#define TEXT_WIDHT              40
-#define NUM_VERT_LABELS         5
+#include "cairoplot_backwards.h"
 
 void
 cairoplot_draw_axis (cairo_t *context, double width, double height)
-{    
+{
   cairo_set_line_width (context, 1);
   cairo_set_source_rgb (context, 0.0, 0.0, 0.0);
   cairo_move_to (context, X_AXI_BASE, 0);
@@ -54,7 +42,7 @@ cairoplot_draw_labels (cairo_t *context, double width, double height,
   max_value = cairoplot_utils_max (values, serie_size);
   min_value = cairoplot_utils_min (values, serie_size);
   buffer = (char *) calloc (50, sizeof(char));
-    
+
   cairo_set_font_size (context, 10.0);
 
   if (show_hlabels)
@@ -159,6 +147,3 @@ cairoplot_function (cairo_t *context, double width, double height,
 {
     /* TODO Implement it! */
 }
-
-#endif
-

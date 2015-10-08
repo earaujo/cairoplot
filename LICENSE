@@ -1,5 +1,5 @@
-CairoPlot porting from the original CairoPlot written in Python.
-Copyright (C) 2011 Ewerton Assis.
+CairoPlot porting to C from the original CairoPlot written in Python.
+Copyright (C) 2011-2015 Ewerton Assis.
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
